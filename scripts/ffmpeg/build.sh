@@ -51,9 +51,12 @@ DEP_LD_FLAGS="-L${BUILD_DIR_EXTERNAL}/${ANDROID_ABI}/lib $FFMPEG_EXTRA_LD_FLAGS"
   --disable-avfilter \
   --disable-doc \
   --disable-debug \
-  --disable-pthreads \
   --disable-network \
   --disable-bsfs \
+  --enable-jni \
+  --enable-neon \
+  --enable-mediacodec \
+  --enable-decoder=h264_mediacodec \
   $ADDITIONAL_COMPONENTS
 
 ${MAKE_EXECUTABLE} clean
