@@ -51,7 +51,6 @@ DEP_LD_FLAGS="-L${BUILD_DIR_EXTERNAL}/${ANDROID_ABI}/lib $FFMPEG_EXTRA_LD_FLAGS"
   --disable-swresample \
   --disable-avfilter \
   --disable-doc \
-  --disable-network \
   --disable-bsfs \
   --enable-jni \
   --enable-neon \
